@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#wrapper{
+width: 840px; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#navigation {
+	width:100%;
+	background-color:#ff0000;
+}
+
+#navigation ul, li {
+	display:inline; 
+	text-decoration:none;
+	padding:37px;
+	color:white;
+}
+#content{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin-left: 200px; /*Set left margin to LeftColumnWidth*/
+}
+
+#header {
+	width:100%; 
+	background:#000000;
+	color:white;
+	min-height: 200px; 
+}
+
+#inner {margin:0 auto; width:700px; background: white; padding:20px; min-height:500px;}
+
+#leftcolumn{
+float: left;
+width:800px; /*Width of left column*/
+min-height:350px;
+background:green;
+padding:20px;
+}
+
+.rightcolumn{
+
+width:230px; /*Width of left column*/
+
+background:green;
+padding:20px;
+position:absolute;
+top:250px;
+left:700px;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: black;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+.floatLeft {
+	
+	float:left;
+	width:300px;
+}
+.floatRight {
+	
+	width:300px; 
+	float:left;
+}

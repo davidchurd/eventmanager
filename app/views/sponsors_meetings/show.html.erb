@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sponsor:</b>
+  <%= @sponsor_meeting.sponsor_id %>
+</p>
+
+<p>
+  <b>Meeting:</b>
+  <%= @sponsor_meeting.meeting_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_sponsor_meeting_path(@sponsor_meeting) %> |
+<%= link_to 'Back', sponsor_meetings_path %>

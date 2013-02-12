@@ -1,0 +1,52 @@
+
+
+	<p id="notice"><%= notice %></p>
+<p>
+  <b>Name:</b>
+  <%= @meeting.name %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @meeting.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @meeting.end_date %>
+</p>
+
+<p>
+  <b>Venue</b>
+  <%= @meeting.venue.venue_name %>
+</p>
+
+<div class="rightcolumn">
+	<div class="innerDiv">
+		<h3>Venue</h3>
+		<%=@venue_name%><br/>
+		<%=@venue_address%><br/>
+		<%=@venue_city%><br/>
+		<%=@venue_state%><br/>
+		<%=@venue_zip%><br/>
+	</div>
+	<div class="innerDiv">
+		<h3>Sponsors</h3>
+		<%@sponsors.each do |e|%>
+	
+	<%=  e.url%>
+	
+	
+	<%end%>
+	
+		</div>
+</div>
+	
+
+
+
+
+<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
+<%= link_to 'Back', meetings_path %>
+
+

@@ -1,0 +1,2 @@
+module SponsorMeetingsHelper
+end

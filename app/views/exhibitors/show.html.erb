@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @exhibitor.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @exhibitor.description %>
+</p>
+
+<p>
+  <b>Sponsor:</b>
+  <%= @exhibitor.sponsor.sponsor_url %>
+</p>
+
+<p>
+  <b>Exhibitor category:</b>
+  <%= @exhibitor.exhibitor_category.category_name %>
+</p>
+
+<div class="rightcolumn">
+	<div class="innerDiv">
+		<h3>Meetings</h3>
+		
+		
+		
+		<%@meeting.each do |m|%>
+	
+			<%=m.name%><br/>
+			<%=m.start_date.strftime("%m/%d/%Y %I:%M %p")%><br/>
+			<%=m.end_date.strftime("%m/%d/%Y %I:%M %p")%><br/>
+			
+		<%end%>
+	
+	</div>
+</div>
+
+
+<%= link_to 'Edit', edit_exhibitor_path(@exhibitor) %> |
+<%= link_to 'Back', exhibitors_path %>
