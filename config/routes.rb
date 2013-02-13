@@ -8,6 +8,8 @@ Eventmanager::Application.routes.draw do
   resources :meetings
 
   resources :sponsors
+  
+  resources :contests
 
   resources :exhibitor_categories
   

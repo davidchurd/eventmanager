@@ -35,7 +35,7 @@ margin: 0 auto; /*Center container on page*/
 #navigation ul, li {
 	display:inline; 
 	text-decoration:none;
-	padding:37px;
+	padding:28px;
 	color:white;
 }
 #content{

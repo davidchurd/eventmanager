@@ -1,6 +1,7 @@
 class Sponsor < ActiveRecord::Base
   attr_accessible :logo, :url
   has_one :exhibitor
+  has_many :contests
   has_and_belongs_to_many :meetings
   
   validates:logo, :presence =>true
