@@ -1,34 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Prize:</b>
-  <%= @contest.prize %>
-</p>
+<table>
+	<tr>
+  <th>Prize:</th>
+  <th>Present to Win</th>
+  <th>Start</th>
+  <th>End</th>
+  <th>Meeting</th>
+  <th>Sponsor</th>
+</tr>
+<tr>
+ <td> <%= @contest.prize %></td>
+ <td><%= @contest.present_to_win %></td>
+ <td><%= @contest.start_date.strftime("%m/%d/%Y %I:%M %p") %></td>
+ <td><%= @contest.end_date.strftime("%m/%d/%Y %I:%M %p") %></td>
+ <td><%= @meeting.name%></td>
+ <td><%= @sponsor.url%></td>
+</tr>
+</table>
 
-<p>
-  <b>Present to win:</b>
-  <%= @contest.present_to_win %>
-</p>
 
-<p>
-  <b>Start date:</b>
-  <%= @contest.start_date %>
-</p>
 
-<p>
-  <b>End date:</b>
-  <%= @contest.end_date %>
-</p>
-
-<p>
-  <b>Meeting:</b>
-  <%= @meeting.name%>
-</p>
-
-<p>
-  <b>Sponsor:</b>
-  <%= @sponsor.url%>
-</p>
 
 
 <%= link_to 'Edit', edit_contest_path(@contest) %> |
