@@ -20,6 +20,16 @@
   <%= @contest.end_date %>
 </p>
 
+<p>
+  <b>Meeting:</b>
+  <%= @meeting.name%>
+</p>
+
+<p>
+  <b>Sponsor:</b>
+  <%= @sponsor.url%>
+</p>
+
 
 <%= link_to 'Edit', edit_contest_path(@contest) %> |
 <%= link_to 'Back', contests_path %>

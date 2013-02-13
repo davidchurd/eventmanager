@@ -14,6 +14,8 @@ class ContestsController < ApplicationController
   # GET /contests/1.json
   def show
     @contest = Contest.find(params[:id])
+    @meeting = @contest.meeting
+    @sponsor = @contest.sponsor
 
     respond_to do |format|
       format.html # show.html.erb
